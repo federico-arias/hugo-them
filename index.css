@@ -1,0 +1,83 @@
+.hero {
+	background: url('https://img.myloview.es/cuadros/paisaje-dibujado-a-mano-con-el-lago-y-el-bosque-sketch-ilustracion-vectorial-400-101199907.jpg');
+	background: url('./hero-img.jpg');
+	background: url('https://i.pinimg.com/originals/af/7f/73/af7f73557fb081e7189f828d0b5efd80.jpg');
+	padding-bottom:4.8em;
+	padding-top: 9.6em;
+	background-size:52%;
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: center;
+}
+
+.hero h1 {
+	font-size:3.2em;
+	font-weight:500;
+}
+
+.hero p {
+	font-size: 1em;
+	line-height: 1.6;
+	cursor: pointer;
+}
+
+.hero span.hashtag {
+	color:lightgrey;
+	display:none;
+}
+
+.hero p:hover span.hashtag {
+	display:inline;
+}
+
+
+.section-header {
+	border-top: 1px solid #151515;
+	border-top: 1px solid blueviolet;
+	border-top-style: dotted;
+	margin-bottom: 2.46em;
+	padding-top:1.23em;
+	font-variant: small-caps;
+	font-size: 1.3em;
+	font-weight: 500;
+	line-height:1.23;
+}
+
+.articles p {
+	padding-left:8em;
+}
+
+.articles h2,
+.articles p {
+	line-height: 1.6;
+	padding-left: 6.4em;
+}
+
+.articles p {
+	font-style:oblique;
+	line-height:1.6;
+	font-size: 0.9em;
+	font-weight: 300;
+	margin-bottom: 3.2em;
+}
+
+
+@media screen and (max-width: 768px) {
+	.desktop-only {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px) and (orientation:landscape) {
+	.mobile-only {
+		display: none;
+	}
+}
+
+

@@ -1,0 +1,60 @@
+body nav {
+	margin-top: 1.6em;
+	border-bottom:1px dotted #eee;
+	padding-bottom: 1.6em;
+}
+
+nav .menu {
+	float:right;
+}
+
+nav .logo {
+	float:left;
+	border-radius:50%;
+}
+
+nav .logo h1 {
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.6;
+}
+
+nav .logo h1 a {
+	display:block;
+	padding-top: 0.8em;
+}
+
+nav .menu {
+	margin-left: auto;
+}
+
+nav .menu ul {
+}
+
+nav .menu li {
+	display: inline-block;
+}
+
+nav .menu li a {
+	padding: 0.8em 1.6em;
+	line-height:1.6;
+	font-size: 1em;
+	display: block;
+}
+
+nav .menu li a:hover {
+}
+
+
+nav:after {
+	display:table;
+	content:" ";
+	clear:both;
+}
+
+nav, 
+.container {
+	max-width:36em;
+	margin: 0 auto;
+}
+

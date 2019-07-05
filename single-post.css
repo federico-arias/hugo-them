@@ -1,0 +1,36 @@
+
+.single-post {
+	padding-top: 1.6em;
+}
+
+.single-post h1 {
+	font-size: 3.2em;
+	line-height:1;
+	font-family: "Playfair Display", "Century Schoolbook", serif;
+	margin-bottom: 0.5em;
+	font-weight: 800;
+}
+
+.single-post h2 {
+	line-height:1.33;
+	font-size:1.2em;
+	margin: 2.66em 0 1.33em;
+}
+
+.single-post p {
+	line-height:1.77;
+	font-size: 0.9em;
+	margin-bottom: 1.77em;
+	font-family: "Montserrat", sans-serif;
+}
+
+.single-post p:first-of-type {
+	font-style: oblique;
+}
+
+.meta__author img {
+	border-radius:50%;
+	height:3.2em;
+	width:3.2em;
+	margin-bottom:1.6em;
+}
