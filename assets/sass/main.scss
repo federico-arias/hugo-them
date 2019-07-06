@@ -1,0 +1,31 @@
+@import 'style';
+@import 'nav';
+@import 'index';
+@import 'code';
+@import 'single-post';
+
+body {
+	font-family: "Playfair Display", sans-serif;
+	box-sizing: border-box;
+	margin:0;padding:0;
+	font-size:16px !important;
+	color:#252525;
+	margin:1.6em;
+}
+
+a:active, 
+a:visited, 
+a:focus, 
+a:visited {
+	color:#252525;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+		body {
+		margin:0;
+	}
+}

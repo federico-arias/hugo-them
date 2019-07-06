@@ -1,0 +1,19 @@
+.highlight {
+    padding-top:1.6em;
+    background-color: rgb(63, 63, 63);
+    clear:both;
+}
+
+.highlight > pre {
+	background-color: inherit !important;
+}
+
+article > p > code {
+	padding: 1.6em;
+	border: 1px solid #ddd;
+	background-color: #60ff004d;
+}
+
+.highlight code {
+	padding-left: 1.6em;
+}

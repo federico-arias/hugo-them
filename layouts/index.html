@@ -4,9 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" 
 			content="width=device-width, user-scalable=no">
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./index.css" />
-		<link rel="stylesheet" href="./nav.css" />
+		{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}"/>
 	</head>
 	<body>
 
@@ -71,6 +70,14 @@
 				blog posts
 			</h1>
 			<div class="articles">
+				 {{ range where .Pages "Section" "posts" }}
+					 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+					 <time datetime="" class="by-line"> 
+						 {{ .Date.Format "2006-01-02" }}
+					 </time>:
+					 <p> {{ .Summary }} </p>
+
+				{{ end }}
 				<h2>Parks and Recreation &dot; May 20th, 2019</h2> 
 				<p>
 					This is the first paragraph
