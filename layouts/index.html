@@ -73,30 +73,11 @@
 				 {{ range where .Pages "Section" "posts" }}
 					 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
 					 <time datetime="" class="by-line"> 
-						 {{ .Date.Format "2006-01-02" }}
-					 </time>:
+						 {{ .Date.Format "2006-01-02" }}:
+					 </time>
 					 <p> {{ .Summary }} </p>
 
 				{{ end }}
-				<h2>Parks and Recreation &dot; May 20th, 2019</h2> 
-				<p>
-					This is the first paragraph
-					after an article title
-					that depicts the life and
-					views of a nineteenth century
-					aristocrat called Mae. 
-					Not the title, the article.
-				</p>
-
-				<h2>Parks and Recreation</h2>
-				<p>
-					This is the first paragraph
-					after an article title
-					that depicts the life and
-					views of a nineteenth century
-					aristocrat called Mae. 
-					Not the title, the article.
-				</p>
 			</div>
 			<h1 class="section-header">
 				skills

@@ -1,8 +1,9 @@
 @import 'style';
 @import 'nav';
-@import 'index';
+@import 'index.scss';
 @import 'code';
 @import 'single-post';
+
 
 body {
 	font-family: "Playfair Display", sans-serif;
@@ -25,7 +26,9 @@ a:hover {
 }
 
 @media screen and (min-width:768px) {
+	
 		body {
 		margin:0;
 	}
+
 }
