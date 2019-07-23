@@ -3,6 +3,8 @@
 @import 'index.scss';
 @import 'code';
 @import 'single-post';
+@import 'form';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap');
 
 
 body {
@@ -14,16 +16,18 @@ body {
 	margin:1.6em;
 }
 
+a,
 a:active, 
-a:visited, 
 a:focus, 
 a:visited {
 	color:#252525;
 }
 
+p a,
 a:hover {
 	text-decoration: underline;
 }
+
 
 @media screen and (min-width:768px) {
 	

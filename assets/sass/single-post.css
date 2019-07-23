@@ -17,11 +17,21 @@
 	margin: 2.66em 0 1.33em;
 }
 
+.single-post li, 
 .single-post p {
 	line-height:1.77;
 	font-size: 0.9em;
 	margin-bottom: 1.77em;
 	font-family: "Montserrat", sans-serif;
+}
+
+.single-post li {
+	margin-bottom:0;
+}
+
+.single-post ul {
+	margin-bottom:1.77em;
+	margin-left: 1.77em;
 }
 
 .single-post p:first-of-type {

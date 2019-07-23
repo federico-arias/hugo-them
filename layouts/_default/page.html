@@ -3,9 +3,8 @@
 	<head>
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./nav.css" />
-		<link rel="stylesheet" href="./single-post.css" />
+		{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}"/>
 <style>
 
 </style>
@@ -16,20 +15,20 @@
 		<nav>
 			<div class="logo">
 				<h1>
-					<a href="./index.html">
-						{ federico-arias } 
+					<a href="/">
+						{ federico-arias }
 					</a>
 				</h1>
 			</div>
 			<div class="menu">
 				<ul>
 					<li>
-						<a href="/">
+						<a href="/about/">
 							About me
 						</a>
 					</li>
 					<li>
-						<a href="/">
+						<a href="/hireme/">
 							Hire me!
 						</a>
 					</li>
@@ -39,35 +38,9 @@
 
 		<div class="container single-post">
 			<h1>
-				This is the post title 
-				which sometimes might be 
-				very long, for the dismay
-				of lazy designers.
+				{{ .Title }}
 			</h1>
-			<div class="meta">
-				<div class="meta__date">
-				</div>
-				<div class="meta__author">
-					<img src="logo.jpeg"/>
-				</div>
-				<div class="meta__tags">
-				</div>
-			</div>
-			<p>
-			The election of the Socialists’ 
-			candidate, the Italian MEP David-Maria Sassoli,
-		   	as European parliament president for a 
-			two-and-a-half-year term, came as a consolation. 
-			He won a narrow majority, prevailing over a Czech 
-			Eurosceptic, the Greens and the radical left, after
-		   	two rounds of voting.
-			</p>
-			<h2> 
-				This is a subsection
-			</h2>
-			<p>
-			Federal officials cast the change as a move toward efficiency. The press secretary for the department, which was contacted for comment for this story, told ProPublica at the time the memo surfaced: “Enforcement instructions seek to clear out the backlog while giving every complaint the individualized and thorough consideration it deserves.”
-			</p>
+			{{ .Content }}
 		</div>
 	</body>
 </html>

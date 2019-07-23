@@ -6,13 +6,21 @@
 			content="width=device-width, user-scalable=no">
 		{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
 		<link rel="stylesheet" href="{{ $style.Permalink }}"/>
+		<title>
+			{{ block "title" . }}
+				{{ .Site.Title }} 
+				{{ with .Params.Title }} 
+					| {{ . }}
+				{{ end }}
+			{{ end }}
+		</title> 
 	</head>
 	<body>
 
 		<nav>
 			<div class="logo">
 				<h1>
-					<a href="https://federico-arias.github.io">
+					<a href="/">
 						{ federico-arias } 
 					</a>
 				</h1>
@@ -20,12 +28,12 @@
 			<div class="menu">
 				<ul>
 					<li>
-						<a href="/">
+						<a href="/about/">
 							About me
 						</a>
 					</li>
 					<li>
-						<a href="/">
+						<a href="/hireme/">
 							Hire me!
 						</a>
 					</li>
@@ -37,13 +45,19 @@
 			<div class="hero">
 				<h1>Hi there!</h1>
 				<p>
-					I write code. 
+					#programming, #go, #scala. 
+					<!--
 					<span class="hashtag">
 						#algorithms
 						#stats
 						#testing
 					</span>
+					-->
 				</p>
+				<p>&nbsp;
+				<p>&nbsp;
+				<p>&nbsp;
+				<!--
 				<p>
 					I ride bikes.
 					<span class="hashtag">
@@ -65,6 +79,7 @@
 						#go
 					</span>
 				</p>
+				-->
 			</div>
 			<h1 class="section-header">
 				blog posts
@@ -79,6 +94,7 @@
 
 				{{ end }}
 			</div>
+			<!--
 			<h1 class="section-header">
 				skills
 			</h1>
@@ -94,6 +110,7 @@
 			<h1 class="section-header">
 				reading
 			</h1>
+			-->
 		</div>
 	</body>
 </html>
