@@ -4,13 +4,8 @@ body nav {
 	padding-bottom: 1.6em;
 }
 
-nav .menu {
-	float:right;
-}
-
 nav .logo {
-	float:left;
-	border-radius:50%;
+	text-align: center;
 }
 
 nav .logo h1 {
@@ -26,6 +21,7 @@ nav .logo h1 a {
 
 nav .menu {
 	margin-left: auto;
+	text-align: center;
 }
 
 nav .menu ul {
@@ -58,3 +54,13 @@ nav,
 	margin: 0 auto;
 }
 
+@media screen and (min-width:768px) {
+	nav .logo {
+		float: left;
+		text-align: left;
+	}
+
+	nav .menu {
+		float:right;
+	}
+}

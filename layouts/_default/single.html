@@ -41,13 +41,24 @@
 				{{ .Title }}
 			</h1>
 			<div class="meta">
-				<div class="meta__date">
-				</div>
 				<div class="meta__author">
 					<img src="/logo.jpeg"/>
 				</div>
+				<div class="col-2">
+					<div class="meta__author-name">
+						by 
+							<a href="/about/">
+								Federico Arias
+							</a>
+					</div>
+					<div class="meta__date">
+						{{ .PublishDate.Format "January 2, 2006" }}
+					</div>
+				</div>
+				<!--
 				<div class="meta__tags">
 				</div>
+				-->
 			</div>
 			{{ .Content }}
 		</div>

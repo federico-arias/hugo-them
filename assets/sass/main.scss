@@ -6,7 +6,6 @@
 @import 'form';
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap');
 
-
 body {
 	font-family: "Playfair Display", sans-serif;
 	box-sizing: border-box;
@@ -28,11 +27,8 @@ a:hover {
 	text-decoration: underline;
 }
 
-
 @media screen and (min-width:768px) {
-	
-		body {
+	body {
 		margin:0;
 	}
-
 }
