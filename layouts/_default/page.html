@@ -1,41 +1,4 @@
-<!doctype html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<meta charset="utf-8">
-		{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
-		<link rel="stylesheet" href="{{ $style.Permalink }}"/>
-<style>
-
-</style>
-	</head>
-	<body>
-
-
-		<nav>
-			<div class="logo">
-				<h1>
-					<a href="/">
-						{ federico-arias }
-					</a>
-				</h1>
-			</div>
-			<div class="menu">
-				<ul>
-					<li>
-						<a href="/about/">
-							About me
-						</a>
-					</li>
-					<li>
-						<a href="/hireme/">
-							Hire me!
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
+{{ partial "header.html" . }}
 		<div class="container single-post">
 			<h1>
 				{{ .Title }}

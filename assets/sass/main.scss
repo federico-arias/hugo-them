@@ -5,6 +5,8 @@
 @import 'code';
 @import 'single-post';
 @import 'form';
+@import 'projects';
+@import 'project';
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap');
 
 body {
@@ -23,6 +25,10 @@ a:visited {
 	color:#252525;
 }
 
+.container-fluid {
+	padding:0.8em;
+}
+
 p a,
 a:hover {
 	text-decoration: underline;
@@ -32,4 +38,5 @@ a:hover {
 	body {
 		margin:0;
 	}
+
 }

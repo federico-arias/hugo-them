@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" 
+		content="width=device-width, user-scalable=no">
+		{{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}"/>
+		<title>
+			{{ block "title" . }}
+				{{ .Site.Title }} 
+				{{ with .Params.Title }} 
+					| {{ . }}
+				{{ end }}
+			{{ end }}
+		</title> 
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<h1>
+					<a href="/">
+						{ federico-arias } 
+					</a>
+				</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="/about/">
+							About me
+						</a>
+					</li>
+					<li>
+						<a href="/hireme/">
+							Hire me!
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+

@@ -12,6 +12,7 @@
 .hero p {
 	font-size: 1em;
 	line-height: 1.6;
+	max-width: 12em;
 	//cursor: pointer;
 }
 
@@ -28,7 +29,6 @@ $m : 1.6;
 
 .section-header {
 	border-top: 1px solid #151515;
-	border-top: 1px solid blueviolet;
 	border-top-style: dotted;
 	margin-bottom: 2.46em;
 	padding-top:1.23em;

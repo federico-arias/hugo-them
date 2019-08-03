@@ -1,0 +1,32 @@
+.project__container {
+	
+}
+
+.mobile-only.project__cover {
+	background-size: contain;
+	height:20em;
+	background-repeat:no-repeat;
+}
+
+.project__section {
+	display: flex;
+	justify-content: center;
+}
+
+.project__column {
+}
+
+.project__jumbotron {
+	background-image: url('https://richardbutlerthesuccesscoach.com/images/laptop-placeholder.png');
+	width: 45em;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+
+	.p1 {
+		max-width:15em;
+		margin: 8em 0;
+	}
+}
