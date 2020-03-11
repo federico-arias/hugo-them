@@ -17,6 +17,23 @@
 	margin: 2.66em 0 1.33em;
 }
 
+
+.single-post table {
+	margin: 0 auto;
+	table-layout: fixed;
+	text-align:center;
+	border-collapse: collapse;
+}
+
+.single-post table th,
+.single-post table tr{
+	padding: 5px;
+}
+
+.single-post table thead {
+	border-bottom: 2px solid #222;
+}
+
 .single-post li, 
 .single-post p {
 	line-height:1.77;

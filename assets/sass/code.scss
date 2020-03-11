@@ -2,7 +2,7 @@
     padding:1.6em;
     background-color: rgb(63, 63, 63);
     clear:both;
-	overflow: scroll;
+	overflow-x: auto;
 }
 
 .highlight > pre {
@@ -14,4 +14,3 @@ article > p > code {
 	border: 1px solid #ddd;
 	background-color: #60ff004d;
 }
-

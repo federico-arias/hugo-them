@@ -2,12 +2,12 @@
 
 		<div class="container">
 			<div class="hero">
-				<h1>Hi there!</h1>
-				<p>
 				{{ with .Site.GetPage "/" }}
+				<h1>{{ .Title }}</h1>
+				<p>
 					{{ .Content }}
-				{{ end }}
 				</p>
+				{{ end }}
 			</div>
 			<h1 class="section-header" id="work">
 				client work
