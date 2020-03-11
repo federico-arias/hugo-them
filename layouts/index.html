@@ -4,41 +4,16 @@
 			<div class="hero">
 				<h1>Hi there!</h1>
 				<p>
-					I'm a full-stack developer. 
-					Here, you can find out about
-					<a href="#work">my work</a>, 
-					read <a href="#blog">the stuff I write</a>, 
-					and <a href="/hireme">hire me</a> :) 
+				{{ with .Site.GetPage "/" }}
+					{{ .Content }}
+				{{ end }}
 				</p>
-				<!--
-				<p>
-					I ride bikes.
-					<span class="hashtag">
-						#powerlifting
-						#dieting
-					</span>
-				</p>
-				<p>
-					I read theory.
-					<span class="hashtag">
-						#marxism
-						#go
-					</span>
-				</p>
-				<p>
-					I build things.
-					<span class="hashtag">
-						#selfbuilding
-						#go
-					</span>
-				</p>
-				-->
 			</div>
 			<h1 class="section-header" id="work">
 				client work
 			</h1>
 			<div class="projects">
-				{{ range where .Pages "Section" "projects" }}
+				{{ range where .Site.RegularPages "Section" "projects" }}
 				<div class="projects__project">
 					<div style="background-image: url({{ .Params.img }});">
 					</div>
@@ -54,40 +29,15 @@
 				blog posts
 			</h1>
 			<div class="articles">
-				 {{ range where .Pages "Section" "posts" }}
+				{{ range where .Site.RegularPages "Section" "posts" }}
 					 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-					 <time datetime="" class="by-line"> 
+					 <time datetime="" class="by-line">
 						 {{ .Date.Format "2006-01-02" }}:
 					 </time>
 					 <p> {{ .Summary }} </p>
 
 				{{ end }}
 			</div>
-			<!--
-			<h1 class="section-header">
-				skills
-			</h1>
-			<h1 class="section-header">
-				biking
-			</h1>
-			<h1 class="section-header">
-				coding	
-			</h1>
-			<h1 class="section-header">
-				reading
-			</h1>
-			<div class="testimonials">
-				
-			</div>
-			<div class="call-to-action">
-				Let's work together
-			</div>
-			<div class="footer">
-				<div class="footer__social-media">
-
-				</div>
-			</div>
-			-->
 			{{ partial "footer.html" . }}
 		</div>
 	</body>
