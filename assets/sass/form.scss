@@ -1,4 +1,32 @@
+form.hireme input {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	font-size: 1.5em;
+	margin-bottom: 1.5em;
+}
+
 form > input[type="submit"] {
 	line-height: 1.6;
 	font-size: 1em;
+}
+
+form.hireme label {
+	text-transform: uppercase;
+	text-align: right;
+	display: block;
+}
+
+.hireme__textarea {
+	height: 4.5em;
+}
+
+.hireme__button {
+	border-radius: 2px;
+	padding: 8px 5px;
+	background-color: #78bc53;
+	color: #fff;
+	display: inline-block;
+	border: 0 solid red;
+	cursor: pointer;
 }
