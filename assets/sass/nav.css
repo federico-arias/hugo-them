@@ -25,6 +25,7 @@ nav .menu {
 }
 
 nav .menu ul {
+	padding-left:inherit;
 }
 
 nav .menu li {
@@ -62,5 +63,9 @@ nav,
 
 	nav .menu {
 		float:right;
+	}
+
+	nav .menu ul {
+		padding-left:inherit;
 	}
 }

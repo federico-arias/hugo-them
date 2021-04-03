@@ -1,7 +1,11 @@
+@import 'functions';
+
 .hero {
 	//background: url('https://img.myloview.es/cuadros/paisaje-dibujado-a-mano-con-el-lago-y-el-bosque-sketch-ilustracion-vectorial-400-101199907.jpg');
-	//background: url('./hero-img.jpg');
+	//background: url('https://img.myloview.es/cuadros/paisaje-dibujado-a-mano-con-el-lago-y-el-bosque-sketch-ilustracion-vectorial-400-101199907.jpg');
+	background: url('/hero.png');
 	//background: url('https://i.pinimg.com/originals/af/7f/73/af7f73557fb081e7189f828d0b5efd80.jpg');
+	//background: url('http://chemagbart.com/wp-content/uploads/2017/10/Inktober18s.jpg');
 }
 
 .hero h1 {
@@ -12,8 +16,8 @@
 .hero p {
 	font-size: 1em;
 	line-height: 1.6;
-	max-width: 12em;
 	//cursor: pointer;
+	max-width: 100%;
 }
 
 .hero span.hashtag {
@@ -38,10 +42,15 @@ $m : 1.6;
 	line-height:1.23;
 }
 
+.articles__article {
+}
+
 .articles h2 {
-	font-size: 1.5em;
-	line-height: ($m / 1.5) * 1em;
-	margin-bottom: ($m / 1.5) * 1em;
+	@include vertical-rhythm("regular");
+}
+
+.articles h3 {
+	@include vertical-rhythm("regular");
 }
 
 .articles p {
@@ -56,41 +65,44 @@ $m : 1.6;
 }
 
 .articles time {
-	margin-bottom: -2.9em;
-	display: block;
+	font-weight: 800;
+	color: gray;
+}
+
+/* media queries */
+
+.desktop-only {
+	display: none;
 }
 
 @media screen and (min-width: 425px) {
 	.hero {
 		padding-bottom:8em;
 		padding-top: 9.6em;
-		background: url('http://chemagbart.com/wp-content/uploads/2017/10/Inktober18s.jpg');
 		background-size: 52%;
 		background-repeat: no-repeat;
 		background-position-x: right;
 		background-position-y: center;
 	}
-}
 
-@media screen and (max-width: 768px) {
+	.hero p {
+		max-width: 12em;
+	}
 
-	.desktop-only {
-		display: none;
+	.articles__article {
+		padding-left: 4rem;
 	}
 }
+
 
 @media screen and (min-width: 768px) {
-	.articles h2 {
-		padding-left: (4 * ($m / 1.5)) * 1em;
-	}
 
 	.mobile-only {
 		display: none;
 	}
-}
 
-@media screen and (min-width: 768px) and (orientation:landscape) {
-	.mobile-only {
-		display: none;
+	.desktop-only {
+		display: inherit;
 	}
+
 }

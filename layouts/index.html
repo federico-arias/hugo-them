@@ -13,31 +13,44 @@
 				client work
 			</h1>
 			<div class="projects">
-				{{ range where .Site.RegularPages "Section" "projects" }}
-				<div class="projects__project">
-					<div style="background-image: url({{ .Params.img }});">
+				{{- $projects := where .Site.RegularPages "Section" "projects" }}
+				{{ range $projects }}
+					<div class="projects__project">
+						<div style="background-image: url({{ .Params.img }});">
+						</div>
+						<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+						<p> {{ .Description}} </p>
+						{{ range .Params.Tags }}
+							<span class="project-tag">{{ . }}</span>
+						{{ end }}
 					</div>
-					<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-					<p> {{ .Description}} </p>
-					{{ range .Params.Tags }}
-						<span class="project-tag">{{ . }}</span>
-					{{ end }}
-				</div>
 				{{ end }}
 			</div>
 			<h1 class="section-header" id="blog">
-				blog posts
+				on software
 			</h1>
 			<div class="articles">
-				{{ range where .Site.RegularPages "Section" "posts" }}
-					 <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-					 <time datetime="" class="by-line">
-						 {{ .Date.Format "2006-01-02" }}:
-					 </time>
-					 <p> {{ .Summary }} </p>
-
+				{{- $posts := where .Site.RegularPages "Section" "posts" }}
+				{{- range $posts.GroupByDate "2006" }}
+					<h2>
+					{{ .Key }}
+					</h2>
+					{{ range .Pages }}
+					<div class="articles__article">
+						 <h3>
+							 <time datetime="" class="by-line">
+								 {{ .Date.Format "Jan 02" }} &bull;
+							 </time>
+							 <a href="{{ .Permalink }}">{{ .Title }}</a>
+						</h3>
+						 <!--<p> {{ .Summary }} </p>-->
+					</div>
+					{{ end }}
 				{{ end }}
 			</div>
+			<h1 class="section-header" id="blog">
+				on other topics
+			</h1>
 			{{ partial "footer.html" . }}
 		</div>
 	</body>

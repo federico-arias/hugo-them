@@ -1,0 +1,20 @@
+@use "sass:map";
+
+$font-size-base:    1rem;
+$line-height-ratio: 1.6;
+$line-height-base:  1rem * $line-height-ratio;
+// base line-height = 16px * 1.6 = 25.6px
+
+$font-sizes: ("big": 2, "regular": 1, "small": 0.65);
+
+@mixin vertical-rhythm($font-size, $bottom-rows: 1, $top-rows: 0, $border: 0rem) {
+	$font-size-factor: map-get($font-sizes, $font-size) ;
+	$font-size: $font-size-factor * $font-size-base;
+	$border: $border;
+	$multiplier: ceil($font-size / $line-height-base);
+
+	font-size:      $font-size;
+	line-height:    $line-height-base * $multiplier;
+	margin-top:     $line-height-base * $top-rows;
+	margin-bottom:  $line-height-base * $bottom-rows - $border;
+}
