@@ -1,6 +1,7 @@
 .footer {
-	margin-bottom:1.6em;
-	text-align:left;
+	margin-bottom:0.8em;
+	margin-top:4.8em;
+	text-align: right;
 
 	a,
 	a:active,
@@ -18,11 +19,12 @@
 .footer-nav li,
 .footer-nav a {
 	display:inline;
+	padding-left:0;
 }
 
 .footer-attribution,
 .footer-nav a {
-	line-height:(1.0 / 0.8) * 1.6; 
+	line-height:(1.0 / 0.8) * 1.6;
 	font-size: 0.8em;
 	color:#353535;
 }
