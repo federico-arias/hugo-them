@@ -1,20 +1,20 @@
 
 .single-post {
-	margin: 1.6em auto 8.0em;
+	margin: 1.6rem auto 8.0rem;
 }
 
 .single-post h1 {
-	font-size: 3.2em;
+	font-size: 3.2rem;
 	line-height:1;
 	font-family: "Playfair Display", "Century Schoolbook", serif;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 	font-weight: 800;
 }
 
 .single-post h2 {
 	line-height:1.33;
-	font-size:1.2em;
-	margin: 2.66em 0 1.33em;
+	font-size:1.2rem;
+	margin: 2.66rem 0 1.33rem;
 }
 
 
@@ -37,8 +37,8 @@
 .single-post li, 
 .single-post p {
 	line-height:1.77;
-	font-size: 0.9em;
-	margin-bottom: 1.77em;
+	font-size: 0.9rem;
+	margin-bottom: 1.77rem;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -47,8 +47,8 @@
 }
 
 .single-post ul {
-	margin-bottom:1.77em;
-	margin-left: 1.77em;
+	margin-bottom:1.77rem;
+	margin-left: 1.77rem;
 }
 
 .single-post p:first-of-type {
@@ -59,20 +59,20 @@
 	display:flex;
 	flex-flow: row;
 	align-items: center;
-	margin-bottom:1.6em;
+	margin-bottom:1.6rem;
 }
 
 .meta .col-2 {
-	padding-left:0.8em;
+	padding-left:0.8rem;
 }
 
 .meta__author img {
 	border-radius:50%;
-	height:3.2em;
-	width:3.2em;
+	height:3.2rem;
+	width:3.2rem;
 }
 
 .single-post img {
-	max-width: 36em;
+	max-width: 36rem;
 }
 

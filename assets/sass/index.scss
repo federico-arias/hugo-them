@@ -5,12 +5,12 @@
 }
 
 .hero h1 {
-	font-size:3.2em;
+	font-size:3.2rem;
 	font-weight:500;
 }
 
 .hero p {
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 1.6;
 	//cursor: pointer;
 	max-width: 100%;
@@ -30,10 +30,10 @@ $m : 1.6;
 .section-header {
 	border-top: 1px solid #151515;
 	border-top-style: dotted;
-	margin-bottom: 2.46em;
-	padding-top:1.23em;
+	margin-bottom: 2.46rem;
+	padding-top:1.23rem;
 	font-variant: small-caps;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	font-weight: 500;
 	line-height:1.23;
 }
@@ -50,13 +50,13 @@ $m : 1.6;
 }
 
 .articles p {
-	margin-top: ($m / 0.9) * 1em;
+	margin-top: ($m / 0.9) * 1rem;
 	font-style:oblique;
-	font-size: 0.9em;
+	font-size: 0.9rem;
 	font-weight: 300;
 	line-height: 1.7777;
-	padding-left: (4 * ($m / 0.9)) * 1em;
-	margin-bottom: 3.555em;
+	padding-left: (4 * ($m / 0.9)) * 1rem;
+	margin-bottom: 3.555rem;
 	font-family: "Montserrat";
 }
 
@@ -73,8 +73,8 @@ $m : 1.6;
 
 @media screen and (min-width: 425px) {
 	.hero {
-		padding-bottom:8em;
-		padding-top: 9.6em;
+		padding-bottom:8rem;
+		padding-top: 9.6rem;
 		background-size: 52%;
 		background-repeat: no-repeat;
 		background-position-x: right;
@@ -82,7 +82,7 @@ $m : 1.6;
 	}
 
 	.hero p {
-		max-width: 12em;
+		max-width: 12rem;
 	}
 
 	.articles__article {

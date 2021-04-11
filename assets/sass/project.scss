@@ -4,7 +4,7 @@
 
 .mobile-only.project__cover {
 	background-size: contain;
-	height:20em;
+	height:20rem;
 	background-repeat:no-repeat;
 }
 
@@ -18,7 +18,7 @@
 
 .project__jumbotron {
 	background-image: url('https://richardbutlerthesuccesscoach.com/images/laptop-placeholder.png');
-	width: 45em;
+	width: 45rem;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -26,7 +26,7 @@
 @media screen and (min-width: 768px) {
 
 	.p1 {
-		max-width:15em;
-		margin: 8em 0;
+		max-width:15rem;
+		margin: 8rem 0;
 	}
 }
