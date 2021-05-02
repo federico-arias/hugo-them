@@ -26,11 +26,13 @@
 					</div>
 				{{ end }}
 			</div>
+			{{- $sections := index .Site.Params "content" }}
+			{{ range $sections }}
 			<h1 class="section-header" id="blog">
-				on software
+				{{ .Name }}
 			</h1>
 			<div class="articles">
-				{{- $posts := where .Site.RegularPages "Section" "posts" }}
+				{{- $posts := where $.Site.RegularPages "Section" .Folder }}
 				{{- range $posts.GroupByDate "2006" }}
 					<h2>
 					{{ .Key }}
@@ -48,11 +50,7 @@
 					{{ end }}
 				{{ end }}
 			</div>
-			<!--
-			<h1 class="section-header" id="blog">
-				on other topics
-			</h1>
-			-->
+			{{ end }}
 			{{ partial "footer.html" . }}
 		</div>
 	</body>
