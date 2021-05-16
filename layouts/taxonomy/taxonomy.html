@@ -1,0 +1,12 @@
+{{range $name, $taxonomy := .Site.Taxonomies.tags}}
+	<h2 id="{{ $name }}">
+		{{ $name }} ({{ .Count }})
+	</h2>
+	<ul>
+		{{ range .Pages }}
+		<li>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		</li>
+		{{end}}
+	</ul>
+{{end}}
